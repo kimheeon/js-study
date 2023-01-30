@@ -1,0 +1,55 @@
+<script>
+    // break , continue
+    const breakFunc = () => {
+        let count = 0;
+        while(count < 100){
+            console.log(`${count} break테스트`);
+            
+    if(count > 10){
+        break;
+    }
+            count = count + 1;
+            
+        }
+        console.log(`break빠져나옴`);
+    };
+
+    // breakFunc();
+
+    // return
+    const returnFunc = () => {
+        let count = 0;
+        while(count < 100){
+            console.log(`${count} return테스트`);
+            
+    if(count > 10){
+        return;
+    }
+            count = count + 1;
+            
+        }
+        console.log(`return빠져나옴`);
+    };
+
+    // returnFunc();
+
+    const continueFunc = () => {
+        let count = 0;
+        while(count < 100){
+            console.log(`${count} continue테스트`);
+            
+    if(count > 10){
+        return;
+    }
+            count = count + 1;
+            if(count == 98){
+                continue;
+            }
+            
+        }
+        console.log(`continue빠져나옴`);
+    };
+
+
+    // continueFunnc();
+</script>
